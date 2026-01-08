@@ -3,9 +3,9 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 class DBConnection {
-    private static final String URL = "jdbc:postgresql://localhost:5432/your_database_name";
-    private static final String USER = "your_username";
-    private static final String PASSWORD = "your_password";
+    private static final String URL = "jdbc:postgresql://localhost:5432/moviemanagement";
+    private static final String USER = "postgre";
+    private static final String PASSWORD = "123456";
 
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASSWORD);
